@@ -90,12 +90,15 @@ exports.wallet = function (req, res) {
 
             var qr = 'denarius:'+address;
             //https://api.coinmarketcap.com/v1/ticker/denarius-dnr/
+
+
+
             unirest.get("https://graviex.net/api/v2/tickers/xhmbtc")
               .headers({'Accept': 'application/json'})
               .end(function (result) {
-                ////var usdprice = result.body[0]['price_usd'] * balance;
+                console.log(result.body['buy']);
                 var btcprice = result.body['buy'] * balance;
-
+                //var usdprice = result.body['buy'] * balance;
             QRCode.toDataURL(qr, function(err, qrcode) {
 
             res.render('account/wallet', { title: 'My Wallet', user: req.user, usd: '0', btc: btcprice.toFixed(8), address: address, qrcode: qrcode, balance: balance.toFixed(8), transactions: transactions });
