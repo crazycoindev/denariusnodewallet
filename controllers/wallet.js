@@ -34,7 +34,7 @@ exports.getWithdraw = (req, res) => {
         balance = 0;
       }
     res.render('account/withdraw', {
-        title: 'Send DNR',
+        title: 'Send XHM',
         balance: balance
     });
   });
@@ -135,7 +135,7 @@ exports.address = function (req, res) {
 
         QRCode.toDataURL(qr, function(err, data_url) {
 
-        res.render('account/newaddress', { title: 'New DNR Address', user: req.user, address: address, data_url: data_url });
+        res.render('account/newaddress', { title: 'New XHM Address', user: req.user, address: address, data_url: data_url });
     });
   });
 };
@@ -153,11 +153,11 @@ exports.withdraw = (req, res, next) => {
     client.getBalance(`dnrw(${username})`, 10, function (error, balance, resHeaders) {
         if (error) return console.log(error);
 
-    var valid = WAValidator.validate(`${sendtoaddress}`, 'DNR');
+    var valid = WAValidator.validate(`${sendtoaddress}`, 'XHM');
 
     if (parseFloat(amount) - fee > balance) {
 
-        req.flash('errors', { msg: 'Withdrawal amount exceeds your DNR balance'});
+        req.flash('errors', { msg: 'Withdrawal amount exceeds your XHM balance'});
         return res.redirect('/withdraw');
 
     } else {
@@ -175,14 +175,14 @@ exports.withdraw = (req, res, next) => {
                 var sendtx = sendFromtx;
                 var vamount = parseFloat(`${amount}`);
 
-                req.flash('success', { msg: `Your ${vamount} DNR was sent successfully! TX ID: ${sendtx}` });
+                req.flash('success', { msg: `Your ${vamount} XHM was sent successfully! TX ID: ${sendtx}` });
                 return res.redirect('/withdraw');
             }
         });
 
     } else {
 
-        req.flash('errors', { msg: 'You entered an invalid XHimera (DNR) Address!' });
+        req.flash('errors', { msg: 'You entered an invalid XHimera (XHM) Address!' });
         return res.redirect('/withdraw');
     }
   }

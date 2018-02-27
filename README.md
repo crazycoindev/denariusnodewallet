@@ -1,5 +1,5 @@
 
-XHimera [DNR] NodeJS Web Wallet
+XHimera [XHM] NodeJS Web Wallet
 =======================
 
 [![Dependency Status](https://david-dm.org/carsenk/denariusnodewallet/status.svg?style=flat)](https://david-dm.org/carsenk/denariusnodewallet) [![Build Status](https://travis-ci.org/carsenk/denariusnodewallet.svg?branch=master)](https://travis-ci.org/carsenk/denariusnodewallet) [![Join the chat at https://gitter.im/denariusproject/Lobby](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/denariusproject/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link) [![Thinkful Pair on Node](https://tf-assets-staging.s3.amazonaws.com/badges/thinkful_repo_badge.svg)](http://start.thinkful.com/node/)
@@ -13,7 +13,7 @@ XHimera Node Wallet - A NodeJS/MongoDB powered denariusd Web Wallet.
 
 Send and Receive Funds, Create new addresses, View Transactions, Edit your account, and more!
 
-Swap between your DNR Balance in USD and BTC prices calculated from http://coinmarketcap.com/currencies/denarius-dnr/
+Swap between your XHM Balance in USD and BTC prices calculated from http://coinmarketcap.com/currencies/denarius-dnr/
 
 2FA Authentication is included as well as QR Codes for addresses and 2FA!
 
@@ -29,7 +29,7 @@ Table of Contents
 Features
 --------
 
-- Send and Receive DNR
+- Send and Receive XHM
 - Wallet Addresses, Create new ones
 - View all transactions
 - Two Factor Authentication

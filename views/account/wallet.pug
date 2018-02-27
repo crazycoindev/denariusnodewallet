@@ -33,7 +33,7 @@ block content
     }
   .page-header
     if user
-      .wallettitle(align='center') DNR
+      .wallettitle(align='center') XHM
       .balance(align='center')
         | #{balance}
       #swap.swapbalance(onclick='swp()', data-text-swap=btc+' BTC', align='center')
@@ -58,7 +58,7 @@ block content
                   form.form-horizontal(action='/newaddress', method='POST')
                     input(type='hidden', name='_csrf', value=_csrf)
                     button.btn.btn-default(type='submit')
-                      | Get a new DNR Address
+                      | Get a new XHM Address
                 .col-xs-6
                   a.btn.btn-default(href='/withdraw', role='button')
                     i.fa.fa-paper-plane
