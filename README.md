@@ -1,5 +1,5 @@
 
-Denarius [DNR] NodeJS Web Wallet
+XHimera [DNR] NodeJS Web Wallet
 =======================
 
 [![Dependency Status](https://david-dm.org/carsenk/denariusnodewallet/status.svg?style=flat)](https://david-dm.org/carsenk/denariusnodewallet) [![Build Status](https://travis-ci.org/carsenk/denariusnodewallet.svg?branch=master)](https://travis-ci.org/carsenk/denariusnodewallet) [![Join the chat at https://gitter.im/denariusproject/Lobby](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/denariusproject/Lobby?utm_source=share-link&utm_medium=link&utm_campaign=share-link) [![Thinkful Pair on Node](https://tf-assets-staging.s3.amazonaws.com/badges/thinkful_repo_badge.svg)](http://start.thinkful.com/node/)
@@ -9,7 +9,7 @@ Denarius [DNR] NodeJS Web Wallet
 
 **Live Demo**: Currently unavailable
 
-Denarius Node Wallet - A NodeJS/MongoDB powered denariusd Web Wallet.
+XHimera Node Wallet - A NodeJS/MongoDB powered denariusd Web Wallet.
 
 Send and Receive Funds, Create new addresses, View Transactions, Edit your account, and more!
 
@@ -23,7 +23,7 @@ Table of Contents
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
-- [Denarius Daemon Setup](#denarius-daemon-setup)
+- [XHimera Daemon Setup](#denarius-daemon-setup)
 - [License](#license)
 
 Features
@@ -102,14 +102,14 @@ save you a lot of time in the long run, because you won't need to manually
 restart the server each time you make a small change in code. To install, run
 `sudo npm install -g nodemon`.
 
-Denarius Daemon Setup
+XHimera Daemon Setup
 ------------------
 
-You must have a Denarius daemon running on a local server or remote server (highly recommend using SSL)
+You must have a XHimera daemon running on a local server or remote server (highly recommend using SSL)
 
 Your configuration options should be set within your .env file, you can check the .env.example for examples
 
-In your denarius.conf file (The Denariusd/QT configuration file) add the following to allow use of the web wallet.
+In your denarius.conf file (The XHimerad/QT configuration file) add the following to allow use of the web wallet.
 
 ```bash
 

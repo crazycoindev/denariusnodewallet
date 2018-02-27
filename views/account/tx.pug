@@ -7,7 +7,7 @@ block content
         p
           h3(align='center')
             i.fa.fa-exchange
-            |  All Denarius Transactions
+            |  All XHimera Transactions
         if (transactions)
           - transactions.sort((a, b)=>{a = new Date(a.timereceived);b = new Date(b.timereceived);return a>b ? -1 : a<b ? 1 : 0;})
           each transaction in transactions

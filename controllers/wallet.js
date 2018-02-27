@@ -142,7 +142,7 @@ exports.address = function (req, res) {
 
 /**
  * POST /withdraw
- * Send Denarius funds
+ * Send XHimera funds
  */
 exports.withdraw = (req, res, next) => {
 	  var fee = 0.0001;
@@ -182,7 +182,7 @@ exports.withdraw = (req, res, next) => {
 
     } else {
 
-        req.flash('errors', { msg: 'You entered an invalid Denarius (DNR) Address!' });
+        req.flash('errors', { msg: 'You entered an invalid XHimera (DNR) Address!' });
         return res.redirect('/withdraw');
     }
   }
