@@ -94,7 +94,7 @@ exports.wallet = function (req, res) {
               .headers({'Accept': 'application/json'})
               .end(function (result) {
                 //var usdprice = result.body[0]['price_usd'] * balance;
-                var btcprice = result.body['buy'] * balance;
+                //var btcprice = result.body['buy'] * balance;
 
             QRCode.toDataURL(qr, function(err, qrcode) {
 
