@@ -36,6 +36,8 @@ block content
       .wallettitle(align='center') XHM
       .balance(align='center')
         | #{balance}
+      #swap.swapbalance(onclick='swp()', data-text-swap=btc+' BTC', align='center')
+        | $#{usd} USD
       br
       .refresh(align='center')
         a(href='/wallet')
