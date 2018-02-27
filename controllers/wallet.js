@@ -93,7 +93,7 @@ exports.wallet = function (req, res) {
             unirest.get("https://graviex.net/api/v2/tickers/xhmbtc")
               .headers({'Accept': 'application/json'})
               .end(function (result) {
-                //var usdprice = result.body[0]['price_usd'] * balance;
+                ////var usdprice = result.body[0]['price_usd'] * balance;
                 var btcprice = result.body['buy'] * balance;
 
             QRCode.toDataURL(qr, function(err, qrcode) {
